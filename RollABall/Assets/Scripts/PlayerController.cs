@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
 	{
 		rb = GetComponent<Rigidbody>();
 	}
-		
+
     void FixedUpdate()
     {
 		float moveHorizontal = Input.GetAxis ("Horizontal");
@@ -21,5 +21,14 @@ public class PlayerController : MonoBehaviour {
 
 		rb.AddForce (movement * speed);
     }
+
+	void OnTriggerEnter(Collider other) 
+	{
+		if (other.gameObject.CompareTag("Pick Up"))
+		{
+			other.gameObject.SetActive (false);
+		}
+	}
 }
+
 

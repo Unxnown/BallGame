@@ -50,7 +50,7 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
  <Reference Include="Facebook.Unity.Settings">
- <HintPath>C:/Users/Public/Documents/Unity Projects/RollABall/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
+ <HintPath>C:/Users/limon/OneDrive/Documents/BallGame/RollABall/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
