@@ -37,6 +37,19 @@ public class PlayerController : MonoBehaviour {
 			count = count + 1;
 			SetCountText ();
 		}
+		else if (other.gameObject.CompareTag("Shrink"))
+		{
+			other.gameObject.SetActive (false);
+			gameObject.transform.localScale = new Vector3(.5f, .5f, .5f);
+		}
+		else if (other.gameObject.CompareTag("Enlarge"))
+		{
+			other.gameObject.SetActive (false);
+			gameObject.transform.localScale = new Vector3(1.5f, 1.5f, 1.5f);
+
+		}
+
+
 	}
 	void SetCountText ()
 	{
